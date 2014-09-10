@@ -33,14 +33,7 @@ public class KafkaReader implements Reader<ByteBufferMessageSet> {
     consumer = new KafkaReaderSimpleConsumer();
   }
   
-  /**
-   * Constructor used for testing
-   * @param context
-   */
-  public KafkaReader(ScribenginContext context){
-    consumer = new KafkaReaderSimpleConsumer();
-    scribenginContext = context;
-  }
+
   
   /**
    * Constructor used for testing
