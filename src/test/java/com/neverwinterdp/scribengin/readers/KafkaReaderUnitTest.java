@@ -16,7 +16,6 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-
 import com.neverwinterdp.queuengin.kafka.SimplePartitioner;
 import com.neverwinterdp.scribengin.KafkaClusterBuilder.KafkaClusterBuilder;
 
@@ -37,7 +36,7 @@ public class KafkaReaderUnitTest {
   }
 
   @Test
-  public void testRead() throws Exception {
+  public void testRead() {
     
     //Write numOfMessages to Kafka
     int numOfMessages = 100 ;
