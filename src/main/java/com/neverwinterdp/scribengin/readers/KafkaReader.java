@@ -71,6 +71,6 @@ public class KafkaReader implements Reader<ByteBufferMessageSet> {
     logger.info("read.");
     consumer.init(properties);
 
-    return consumer.read(++offset);
+    return consumer.read(offset++);
   }
 }

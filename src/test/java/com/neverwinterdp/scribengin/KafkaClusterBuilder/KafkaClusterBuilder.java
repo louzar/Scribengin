@@ -11,7 +11,7 @@ public class KafkaClusterBuilder {
     System.setProperty("log4j.configuration", "file:src/main/resources/log4j.properties") ;
   }
   
-  public static String TOPIC = "metrics.consumer" ;
+  public static String TOPIC = "reader.test" ;
   
   Server  zkServer, kafkaServer ;
   Shell   shell ;
