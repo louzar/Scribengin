@@ -7,7 +7,7 @@ import org.junit.Test;
 import com.neverwinterdp.scribengin.api.Source;
 
 
-public class TestKafkaReader {
+public class KafkaReaderUnitTest {
 
 
   @Test
