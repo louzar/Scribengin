@@ -40,7 +40,7 @@ public class KafkaReader implements Reader<ByteBufferMessageSet> {
    * @param p
    */
   public KafkaReader(Properties p){
-    consumer = new KafkaReaderSimpleConsumer();
+    this();
     properties = p;
   }
 
