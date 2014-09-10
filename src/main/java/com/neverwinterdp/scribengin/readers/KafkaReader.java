@@ -26,14 +26,31 @@ public class KafkaReader implements Reader<ByteBufferMessageSet> {
   private static final Logger logger = Logger.getLogger(KafkaReader.class);
   private ScribenginContext scribenginContext;
   private KafkaReaderSimpleConsumer consumer;
-
+  private Properties properties;
+  static int offset = 0;
 
   public KafkaReader() {
     consumer = new KafkaReaderSimpleConsumer();
   }
+  
+  /**
+   * Constructor used for testing
+   * @param context
+   */
+  public KafkaReader(ScribenginContext context){
+    consumer = new KafkaReaderSimpleConsumer();
+    scribenginContext = context;
+  }
+  
+  /**
+   * Constructor used for testing
+   * @param p
+   */
+  public KafkaReader(Properties p){
+    consumer = new KafkaReaderSimpleConsumer();
+    properties = p;
+  }
 
-  private Properties properties;
- static int offset = 1;
 
   //get the offset we want
   //go read the data
